@@ -7,15 +7,12 @@ box-sizing: border-box;
 
 nav, .wraper{
     width: 100%;
-    max-width: 1440px;
     height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
     opacity: none;
-    z-index: 1000;
-    opacity: 1;
-    background: #282a35 ! important; 
+    background: #282a35 ; 
   }  
  .logo img{
      display: flex;
@@ -26,16 +23,14 @@ nav, .wraper{
      width: 80%;
  }
 
-.btn button{
+.btn .nav-btn{
     display: flex;
     justify-content: flex-end;
     appearance: button;
-    width: 128px;
-    height: 50px;
     background-color: #0A1E25;
     background-image: none;
     background-color: none;
-    padding: 0.75rem;
+    padding: 1rem 2rem 0.5rem 2rem;
     margin-right: 30px;
     border: 1px solid white;
     border-radius: 0.375rem;
@@ -43,77 +38,43 @@ nav, .wraper{
     font-family: Eudoxus Sans;
     font-size: 0.857rem;
     font-weight: 700;
-    line-height: 1.2rem; 
+    line-height: 1.25rem; 
     text-transform: capitalize;
     text-align: center;
     cursor: pointer; 
 
  } 
  
-.btn button:hover{
+.btn .nav-btn:hover{
     opacity: 1;
    
 } 
-@media only screen and (max-width:600px) {
-    
-
-nav, .wraper{
-    width: 100%;
-    max-width: 1440px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: none;
-    z-index: 1000;
-    opacity: 1;
-    background: #282a35; 
-  }  
- .logo img{
-     display: flex;
-     justify-content: left;
-    
- }  
- img{
-     width: 100%;
- }
-}
     
 header{
     
 background: #0A1E25; 
 width: 100%;
-max-width: 1440px;
+height: 100%;
 }
-header .content{
+.header-content{
     display: flex;
     justify-content: space-between;
     padding: 30px;
     
 }
-header h1{
+header .header-h1{
 color: #F5F5EB;
-margin-top: 8%;
-left: 142.2396240234375px;
-padding-right: 30px;
+padding: 5rem 2rem;
 font-family: Reckless Neue;
 font-size: 74px;
 font-weight: 600;
 line-height: 70px;
-letter-spacing: 0px;
 text-align: left; 
 
 }
-header p{
+header .header-p{
 color: #F5F5EB;
-height: 94.66690063476562px;
-width: 630.20166015625px;
-left: 142.2396240234375px;
-top: 402.5009765625px;
-border-radius: nullpx;
-margin-top: 4rem;
 padding: 20px;
-margin-bottom: 4rem;
 font-family: Reckless Neue;
 font-size: 24px;
 font-weight: 400;
@@ -121,136 +82,60 @@ line-height: 38px;
 letter-spacing: 0px;
 text-align: left;
 } 
-
-header img{
-    position: absolute;
-    width: 341.23px;
-    left: 930.35px;
-    top: 328px;
-    padding-right: 50px;
+.animation-image{
+    width: 100%;
+}
+ .moving-image{
+     width: 50%;
+    padding-left: 100px;
     transition: 1s;
+    margin-top: -10%;
+    /* margin-left: 16rem; */
+ }
+ .header-content .animation-image{
     animation-name: top-to-buttom;
-    animation-duration: 2s;
+    position: absolute;
+    animation-duration: 8s;
     animation-iteration-count: infinite;
    animation-timing-function: ease-in-out;
    animation-delay: 0s;
    animation-direction: reverse;
    animation-play-state: initial;
 } 
-@keyframes top-to-buttom{
-    0%{
-        height: 200px;
+ @keyframes top-to-buttom{ 
+     0%{ 
+         width: 200px; 
     }
-    100%{
-        height: 450px;
+     100%{ 
+         width: 300px; 
     }
 
-}
+}   
 
-header button {
+.header-button .header-btn {
 background: #0BB95D;
-height: 56px;
-width: 180px;
-left: 144.96630859375px;
-top: 587.07275390625px;
-border-radius: 10px;
-padding: 8px;
+ border-radius: 10px; 
+ padding: 1rem 2rem 1rem 3rem; 
 margin-left: 20px;
-color: white;
+ color: white; 
 font-weight: 500;
 cursor: pointer;
-margin-bottom: 100px;  
+margin-top: 70px; 
+ margin-bottom: 250px;  
+ border: none; 
+ text-transform: capitalize;
 }
-@media only screen and (max-width: 1000px){
-
-    header{
-    
-        background: #0A1E25; 
-        max-width: 1440px;
-        width: 100%;
-        }
-         header .content{ 
-             display: block;
-             /* display: flex;  */
-            /* justify-content: space-between;  */
-            padding: 30px;
-            
-        }
-        header h1{
-        color: #F5F5EB;
-        margin-top: 8%;
-        left: 142.2396240234375px;
-        padding-right: 30px;
-        font-family: Reckless Neue;
-        font-size: 30px;
-        font-weight: 600;
-        line-height: 50px;
-        letter-spacing: 0px;
-        text-align: center; 
-        
-        }
-        header p{
-        color: #F5F5EB;
-        height: 94.66690063476562px;
-        width: 500.20166015625px;
-        max-width: 100%;
-        left: 142.2396240234375px;
-        top: 402.5009765625px;
-        border-radius: nullpx;
-        margin-top: 0rem;
-        padding: 20px;
-        margin-bottom: 4rem;
-        font-family: Reckless Neue;
-        font-size: 20px;
-        font-weight: 300;
-        line-height: 30px;
-        letter-spacing: 0px;
-        text-align: left;
-        }
-    
-         header img{
-            position: absolute;
-            width: 341.23px;
-            left: 930.35px;
-            top: 328px;
-            padding-right: 50px;
-            transition: 1s;
-            animation-name: top-to-buttom;
-            animation-duration: 2s;
-            animation-iteration-count: infinite;
-           animation-timing-function: ease-in-out;
-           animation-delay: 0s;
-           animation-direction: reverse;
-           animation-play-state: initial;
-           display: none;
-        } 
-        
-        
-        header button {
-        background: #0BB95D;
-        height: 56px;
-        width: 180px;
-        left: 144.96630859375px;
-        top: 587.07275390625px;
-        border-radius: 10px;
-        padding: 8px;
-        margin-left: 20px;
-        color: white;
-        font-weight: 500;
-        cursor: pointer;
-        margin-bottom: 100px;
-        margin-top: 30px;  
-        }
-    }
-
+.header-button{
+    margin-top: -100px;
+}
 
 section {
     width: 100%;
-    height: 150px;
+    height:90px;
     background-color: white;
     margin-top: 10%;
 }
-section h1{
+section .section-h1{
     font-family: Reckless Neue;  
     font-size: 48px;
     font-weight: 700;
@@ -259,7 +144,7 @@ section h1{
      text-align: center;
 
 }
-section p{
+section .section-p{
     font-family: Reckless Neue;
     font-size: 24px;
      font-weight: 400;
@@ -268,45 +153,11 @@ section p{
      text-align: center;
 
 }
-@media only screen and (max-width:1000px) {
-    
-section {
-    max-width: 1440px;
-    height: 300px;
-    background-color: white;
-    margin-top: 10%;
-    margin-bottom: 10%;
-}
-section h1{
-    font-family: Reckless Neue; 
-    display: block;
-    width: 400px; 
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 67px;
-    letter-spacing: 0px;
-     text-align: center;
-     padding: 15px;
-}
-section p{
-    padding: 10px;
-    padding-bottom: 40px;
-    font-family: Reckless Neue;
-    font-size: 24px;
-    font-weight: 400;
-     line-height: 34px;
-      letter-spacing: 0.20000000298023224px;
-      text-align: center;
-
-}
-
-}
-
 #icons{
     width: 100%;
     height: 172px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     margin-bottom: -10%;
     background: #0A1E25;  
@@ -314,41 +165,9 @@ section p{
 #icons .google{
     width: 40px;
 }
-#icons img{
+#icons .icons-image{
     width: 100%;
-}
-@media only screen and (max-width: 600px) {
-    
-#icons{
-    width: 100%;
-    max-width: 500px;
-    overflow: scroll;
-    height: 160px;
-    display: flex;
-    gap: 50px;
-    font-size: 100px;
-    font-weight: 600;
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-    margin: auto;
-    margin-bottom: -10%;
-    background: #0A1E25; 
-    cursor: pointer;
-    position: relative;
-}
-#icons img{
-    width: 60px;
-}
-
-#icons .google{
-    width: 40px;
-}
-#icons .micro{
-    width: 100px;
-}
-}
-    
+}   
 
 
 #fund{
@@ -362,8 +181,8 @@ section p{
      margin-bottom: -10%;
      padding-left: 10%;
 }
-#fund img{
-    width: 90%;
+#fund .fund-image{
+    width: 50%;
 }
 .fund-text{
     font-family: Reckless Neue;
@@ -372,6 +191,7 @@ section p{
     line-height: 64px;
     padding-right: 10%;
     letter-spacing: 0.01em;
+    margin-top: 16rem;
     
 }
  .fund-para{
@@ -384,45 +204,10 @@ letter-spacing: 0.03em;
 text-align: left;
 
 }
-@media only screen and (max-width: 800px){
-    
-#fund{
-    width: 100%;
-    height: 100%;
-    background: #F1FFFF; 
-    display: block;
-    justify-content: center;
-    text-align: center;
-    padding-top: 10%;
-    padding-bottom: 10%;
-     margin-bottom: -10%;
-     padding-left: 10%;
-}
 
-#fund img{
-    width: 80%;
-}
-.fund-text{
-    font-family: Reckless Neue;
-    font-size: 40px;
-    font-weight: 400;
-    text-align: left;
-    line-height: 64px;
-    padding-right: 10%;
-    letter-spacing: 0.01em;
     
-}
- .fund-para{
-font-family: Reckless Neue;
-font-size: 15px;
-font-weight: 400;
-padding-right: 10%;
-line-height: 34px;
-letter-spacing: 0.03em;
-text-align: left;
 
-}
-}
+
 #pro-plan{
     background: url(./IMAGES/second-background.svg);
     background-size: cover;
@@ -467,6 +252,15 @@ letter-spacing: 0.03em;
 text-align: center;
 color: #0F242080;
 }
+#p-pro{
+    font-family: Reckless Neue;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #0F242080;  
+}
 .doller{
 font-family: Reckless Neue;
 font-size: 40px;
@@ -477,17 +271,33 @@ letter-spacing: 0.03em;
 text-align: center;
 
 }
+.invested-doller{
+    
+    font-family: Reckless Neue;
+    font-size: 20px; 
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0.01em;
+    text-align: center;
+}
 .year{
     font-size: 20px;
     font-family: Reckless Neue;
 }
 .p-gap{
     margin-top: 10px;
+    
+    font-family: Reckless Neue;
+    font-size: 20px; 
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0.01em;
+    text-align: center;
 }
-#btn{
+#pro-plan-btn{
  margin-top: 30% ;
 }
-button{
+.invested-btn{
 height: 50px;
 width: 150px;
 color: white;
@@ -497,91 +307,6 @@ border-radius: 10px;
 background: #0F2420;
 }
 
-@media only screen and (max-width: 600px){
-    #pro-plan{
-        background: url(./IMAGES/second-background.svg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 100%;
-        max-width: 1440px;
-        height: 500px;
-        padding-top: 10%;
-        margin-bottom: 30%;
-          
-    }
-    .rgb-text{
-        margin: auto;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        text-align: center;
-        align-items: center;
-        margin-top: 10%;
-        margin-bottom: 40%;
-        padding: 10%;
-        position: relative;
-        width: 300px;
-        min-height: 750px;
-        justify-content: center;
-        background: #E9F5D0;
-    }
-    .h2-pro{
-        font-family: Reckless Neue;
-        font-size: 24px; 
-        font-weight: 600;
-        line-height: 36px;
-        padding-top: 40%;
-        letter-spacing: 0.01em;
-        text-align: center;
-        
-    } 
-    .p-pro{
-    font-family: Reckless Neue;
-    font-size: 20px;
-    font-weight: 400;
-    padding-top: 8%;
-    line-height: 33px;
-    letter-spacing: 0.03em;
-    text-align: center;
-    color: #0F242080;
-    }
-    #p-pro{
-        margin-top: -35%;
-        display: block;
-        text-align: center;
-    }
-    .doller{
-    font-family: Reckless Neue;
-    font-size: 40px;
-    font-weight: 700;
-    padding-top: 1%;
-    line-height: 80px;
-    letter-spacing: 0.03em;
-    text-align: center;
-    
-    }
-    .year{
-        font-size: 20px;
-        font-family: Reckless Neue;
-    }
-    .p-gap{
-        padding-top: -0%;
-    }
-    #btn{
-     margin-bottom: -40% ;
-    }
-    button{
-    height: 50px;
-    width: 150px;
-    padding-top: -60%;
-    color: white;
-    left: 549.4607543945312px;
-    top: 2804.962890625px;
-    border-radius: 10px;
-    background: #0F2420;
-    }
-}
 #frequents{
     width: 100%;
     height: 100%;
@@ -589,17 +314,20 @@ background: #0F2420;
     margin-bottom: -130px;
     color: black;
 }
-#frequents h1{
+#frequents .frequents-h1{
     padding-top: 40px;
     padding-bottom: 10px;
+    font-family: Reckless Neue;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
 }
-#frequents p{
+#frequents .frequents-p{
     padding-bottom: 50px;
-}
-.first-list{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    text-align: center;
+    padding-bottom: 4rem;
+    font-size: 20px;
+    font-family: Reckless Neue;
 }
 .list-item{
     display: flex;
@@ -607,7 +335,6 @@ background: #0F2420;
     align-items: center;
     justify-content: center;
     gap: 20%;
-    border-bottom: 1px solid white;
 
 }
 li{
@@ -621,67 +348,41 @@ li img{
 }
 .hide{
     display: none;
+    padding: 1rem 2rem 1rem 1rem;
 }
 .hide.active{
     display: block;
+    
 }
 .second-hide{
     display: none;
+    padding: 1rem 2rem 1rem 1rem;
 }
 .second-hide.active1{
-    display: contents;
+    display: block;
 }
 .third-hide{
     display: none;
+    padding: 1rem 2rem 1rem 1rem;
 }
 .third-hide.active2{
     display: block;
 }
 .fourth-hide{
-  display: none;  
+  display: none; 
+  padding: 1rem 2rem 1rem 1rem; 
 }
 .fourth-hide.active3{
     display: block;
 }
 .fifth-hide{
     display: none;
+    padding: 1rem 2rem 1rem 1rem;
 }
 .fifth-hide.active4{
     display: block;
 }
-@media only screen and (max-width: 800px){
-    #frequents{
-        width: 100%;
-        height: 100%;
-        margin-top: 80%;
-        margin-bottom: -130px;
-        color: black;
-        padding: 20px;
-    }
-    #frequents h1{
-        padding-top: 40px;
-        padding-bottom: 10px;
-    }
-    #frequents p{
-        padding-bottom: 50px;
-    }
-    .first-list{
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-    .list-item{
-        display: flex;
-        align-content: center;
-        align-items: center;
-        justify-content: center;
-        gap: 20%;
-        border-bottom: 1px solid white;
-    
-    }
 
-
-}
 #tripple-image{
     background: #F5F5F5;
     width: 80%;
@@ -701,9 +402,6 @@ padding-top: 40px;
 padding-bottom: 40px;
 height: 56px;
 width: 120px;
-left: 548px;
-top: 32px;
-border-radius: 0px;
 margin: auto;
 
 }
@@ -727,96 +425,23 @@ letter-spacing: 0em;
 text-align: center;
 
 }
- .tripple-btn {
-margin: 20px auto;
-height: 44px;
-width: 130px;
-left: 0px;
-top: 0px;
-border-radius: 8px;
-padding: 10px, 18px, 10px, 18px;
-background-color: #0BB95D;
-
-
-} 
-
-.tripple-btn button{
-    color: white; 
-    background: #009948;
-    outline: hidden;
+ #tripple-btn {
+margin:  auto;
+display: flex;
+justify-content: center;
+        
+ }
+#tripple-btn .tripple-btn{
+    background-color: #0BB95a;
+    color: white;
+    padding: 1rem 2rem 1rem 3rem;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 1rem;
     border: none;
     cursor: pointer;
+}
 
-}
-@media only screen and (max-width:600px){
-    #tripple-image{
-        background: #F5F5F5;
-        width: 90%;
-        height: 300px;
-        margin: auto;
-        margin-top: 40%;
-        border-radius: 3rem;
-        margin-bottom: 40%;
-    }
-    .tripple-flex{
-        padding-top: 40px;
-        padding-bottom: 40px;
-        height: 56px;
-        width: 120px;
-        left: 548px;
-        top: 32px;
-        border-radius: 0px;
-        margin: auto;
-        
-        }
-        #tripple-image h1{
-        font-family: Reckless Neue;
-        font-size: 20px;
-        padding-top: 30px;
-        font-weight: 600;
-        margin-top: -20%;
-        line-height: 30px;
-        letter-spacing: 0em;
-        text-align: center;
-        
-        }
-        #tripple-image p{
-            padding-top: 20px;
-            font-family: Reckless Neue;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 28px;
-        letter-spacing: 0em;
-        text-align: center;
-        
-        }
-         .tripple-btn {
-        margin: 20px auto;
-        height: 44px;
-        width: 130px;
-        left: 0px;
-        top: 0px;
-        border-radius: 8px;
-        padding: 10px, 18px, 10px, 18px;
-        background-color: #0BB95D;
-        
-        
-        } 
-        
-        .tripple-btn button{
-            color: white; 
-            background: #009948;
-            outline: hidden;
-            border: none;
-            cursor: pointer;
-        
-        }
-#tripple-image img{
-    width: 120px;
-    display: none;
-
-}
-}
 .svg-leave{
     width: 36.26px;
 }
@@ -832,11 +457,9 @@ footer{
 
 }
 .all-footer{
-    /* height: 300px; */
     display: flex;
     justify-content: space-between;
     padding: 30px;
-    /* border-bottom: 1px solid white; */
 }
 .logo-svg{ 
     display: flex;
@@ -859,14 +482,16 @@ text-transform: capitalize ;
 margin-bottom: 30px;  
 font-weight: 600;
 line-height: 26px;
-letter-spacing: -0.30000001192092896px;
 text-align: left; 
 
 }
-.ready button{
+ .footer-btn{
     background: #0BB95D;
      border: none;
      cursor: pointer;
+     padding: 1rem 2rem 1rem 3rem;
+     color: white;
+      border-radius: 0.5rem;
     
      
 }  
@@ -898,76 +523,558 @@ hr{
      letter-spacing: -0.20454545319080353px;
 
 }
-@media only screen and (max-width:760px){
-    .all-footer{
-        height: 300px;
+
+
+/* MOBILE SCREEN SIZES */
+@media screen and (max-width: 600px) {
+    nav, .wraper{
+        width: 100%;
+        height: 110px;
         display: flex;
-        justify-content: initial;
-        flex-wrap: wrap;
-        padding: 30px;
-        margin-bottom: 10%;
-    }
-    .logo-svg{ 
-        display: flex;
-    } 
-    .ready{ 
-         display: block; 
-        justify-content: inherit; 
-        gap: 20px; 
-        margin-top: -50px; 
-        
-     }
-    .ready h2{
-    font-family: Reckless Neue;
-    font-size: 22px;
-    color: white;
-    text-transform: capitalize ;
-    margin-bottom: 30px;  
-    font-weight: 600;
-    line-height: 26px;
-    letter-spacing: -0.30000001192092896px;
-    text-align: left; 
-    
-    }
-    .ready button{
-        background: #0BB95D;
-         border: none;
-         cursor: pointer;    
-    }  
-    hr{
-        width: 90%;
-        margin: auto;
-        margin-top: 10%;
-        margin-bottom: 20px;
+        justify-content: flex-start;
         align-items: center;
-    }
-    .footer-icon{
+        opacity: none;
+        background: #282a35 ; 
+      }  
+     .logo img{
+         display: flex;
+         justify-content: flex-start;
+        
+     }  
+     img{
+         width: 80%;
+     }
+    
+    .btn .nav-btn{
         display: flex;
-        flex-direction: column;
-        gap: 20px;
-        padding-right: 30px;
-        align-items: flex-end;
+        justify-content: flex-end;
+        appearance: button;
+        background-color: #0A1E25;
+        background-image: none;
+        background-color: none;
+        padding: 1rem 2rem 0.5rem 2rem;
+        margin-right: 30px;
+        border: 1px solid white;
+        border-radius: 0.375rem;
         color: white;
-        margin-bottom: 10%;
-        padding-bottom: 20px;
-    }
-    .term-condition{
-        display: block;
-        margin-top: -40%;
-        padding: 10px;
-        padding-bottom20px: ;
-    }
-    .term-condition p{
-        padding: 20px;
-    }
-    footer{
-        /* margin-bottom: -10%; */
+        font-family: Eudoxus Sans;
+        font-size: 0.6456rem;
+        font-weight: 700;
+        line-height: 1.25rem; 
+        text-transform: capitalize;
+        text-align: center;
+        cursor: pointer; 
+    
+     } 
+     
+    .btn .nav-btn:hover{
+        opacity: 1;
+       
+    } 
+        
+    /* header */
+    header{
+    
+        background: #0A1E25; 
         width: 100%;
         height: 100%;
-        overflow: none;
-    }
-    
+        }
+        .header-content{
+            display: flex;
+            justify-content: left;
+            padding: 30px;
+            
+        }
+        header .header-h1{
+        color: #F5F5EB;
+        padding: 2rem ;
+        display: flex;
+        font-family: Reckless Neue;
+        font-size: 45px;
+        font-weight: 600;
+        line-height: 70px;
+        text-align: left; 
+        
+        }
+        header .header-p{
+        color: #F5F5EB;
+        padding: 20px;
+        font-family: Reckless Neue;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 38px;
+        margin-top: -40px;
+        letter-spacing: 0px;
+        text-align: left;
+        } 
+        
+        
+          .moving-image{
+             width: 50%;
+            padding-left: 100px;
+            transition: 1s;
+            margin-top: -10%;
+            display: none; 
+         }
+         .header-content .animation-image{
+            animation-name: top-to-buttom;
+            position: absolute;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+           animation-timing-function: ease-in-out;
+           animation-delay: 0s;
+           animation-direction: reverse;
+           animation-play-state: initial;
+           display: none;
+        }      
+        
+        .header-button .header-btn {
+        background: #0BB95D;
+         border-radius: 10px; 
+         padding: 1rem 2rem 1rem 3rem; 
+        margin-left: 20px;
+         color: white; 
+        font-weight: 500;
+        cursor: pointer;
+        margin-top: 70px; 
+         margin-bottom: 250px;  
+         border: none; 
+         text-transform: capitalize;
+        }
+        .header-button{
+            margin-top: -80px;
+            margin-bottom: -80px;
+            
+        }
+        section {
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            margin-top: 10%;
+        }
+        section .section-h1{
+            font-family: Reckless Neue;  
+            font-size: 38px;
+            font-weight: 700;
+            padding: 20px;
+            line-height: 67px;
+            letter-spacing: 0px;
+             text-align: center;
+        
+        }
+        section .section-p{
+            font-family: Reckless Neue;
+            font-size: 18px;
+             font-weight: 400;
+             padding: 20px;
+             line-height: 34px;
+             text-align: center;
+             margin-top: -20px;
+        
+        }
+        #icons{
+            width: 100%;
+            height: 180px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20%;
+            margin-bottom: -10%;
+            background: #0A1E25;  
+            overflow: scroll;
+        }
+        #icons .google{
+            width: 50px;
+        }
+        #icons .facebook{
+            width: 50px;
+        }
+        #icons .twitter{
+            width: 50px;
+        }
+        #icons .amazon{
+            width: 100px;
+        }
+        #icons .apple{
+            width: 50px;
+        }
+
+        #icons .icons-image{
+            width: 100%;
+        } 
+        
+        
+        #fund{
+            width: 100%;
+            height: 100%;
+            background: #F1FFFF; 
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding-top: 10%;
+            padding-bottom: 10%;
+             margin-bottom: -10%;
+             padding-left: 10%;
+        }
+        #fund .fund-image{
+            width: 700px;
+        }
+        .fund-enclose{
+            margin-top: -50%;
+            margin-bottom: 10%;
+        }
+        .fund-text{
+            font-family: Reckless Neue;
+            font-size: 48px;
+            font-weight: 400;
+            line-height: 64px;
+            padding-right: 10%;
+            letter-spacing: 0.01em;
+            /* margin-top: 16rem; */
+            
+        }
+         .fund-para{
+        font-family: Reckless Neue;
+        font-size: 20px;
+        font-weight: 400;
+        padding-right: 10%;
+        line-height: 34px;
+        letter-spacing: 0.03em;
+        text-align: left;
+        
+        }
+
+
+        #pro-plan{
+            background: url(./IMAGES/second-background.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 500px;
+            padding-top: 10%;
+            margin-bottom: 30%;
+              
+        }
+        .rgb-text{
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            text-align: center;
+            align-items: center;
+            padding-top: 10%;
+            position: relative;
+            width: 300px;
+            height: 600px;
+            justify-content: center;
+            background: #E9F5D0;
+        }
+        .h2-pro{
+            font-family: Reckless Neue;
+            font-size: 24px; 
+            margin-top: -30px;
+            font-weight: 600;
+            line-height: 36px;
+            letter-spacing: 0.01em;
+            text-align: center;
+            
+        } 
+        .p-pro{
+        font-family: Reckless Neue;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 33px;
+        letter-spacing: 0.03em;
+        text-align: center;
+        color: #0F242080;
+        }
+        #p-pro{
+            font-family: Reckless Neue;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 33px;
+            letter-spacing: 0.03em;
+            text-align: center;
+            color: #0F242080;  
+        }
+        .doller{
+        font-family: Reckless Neue;
+        font-size: 40px;
+        font-weight: 700;
+        margin-top: 50px;
+        line-height: 80px;
+        letter-spacing: 0.03em;
+        text-align: center;
+        
+        }
+        .invested-doller{
+            
+            font-family: Reckless Neue;
+            font-size: 20px; 
+            font-weight: 600;
+            line-height: 36px;
+            letter-spacing: 0.01em;
+            text-align: center;
+        }
+        .year{
+            font-size: 20px;
+            font-family: Reckless Neue;
+        }
+        .p-gap{
+            /* margin-top: 10px; */
+            margin-bottom: 20px;
+            
+            font-family: Reckless Neue;
+            font-size: 20px; 
+            font-weight: 600;
+            line-height: 36px;
+            letter-spacing: 0.01em;
+            text-align: center;
+        }
+        #pro-plan-btn{
+         margin-bottom: 30% ;
+        }
+        .invested-btn{
+        height: 50px;
+        width: 150px;
+        color: white;
+        left: 549.4607543945312px;
+        top: 2804.962890625px;
+        border-radius: 10px;
+        background: #0F2420;
+        }
+
+
+
+        #frequents{
+            width: 100%;
+            height: 100%;
+            padding-top: 49px;
+            margin-top: 30%;
+            margin-bottom: 130px;
+            color: black;
+        }
+        #frequents .frequents-h1{
+            padding-top: 40px;
+            margin-top: 10%;
+            padding-bottom: 10px;
+            font-family: Reckless Neue;
+            font-size: 25px;
+            font-weight: 700;
+            text-align: center;
+        }
+        #frequents .frequents-p{
+            padding-bottom: 50px;
+            text-align: center;
+            padding-bottom: 4rem;
+            font-size: 18px;
+            font-family: Reckless Neue;
+        }
+        .list-item{
+            display: flex;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+            gap: 20%;
+        
+        }
+        li{
+            list-style: none;
+            padding: 10px;
+            cursor: pointer;
+            
+        }
+        li img{
+            width: 15px;
+            gap: 30px;
+            position: sticky;
+        }
+        .hide{
+            display: none;
+            padding: 10px;
+        }
+        .hide.active{
+            display: block;
+            
+        }
+        .second-hide{
+            display: none;
+            padding: 1rem 2rem 1rem 1rem;
+        }
+        .second-hide.active1{
+            display: block;
+        }
+        .third-hide{
+            display: none;
+            padding: 1rem 2rem 1rem 1rem;
+        }
+        .third-hide.active2{
+            display: block;
+        }
+        .fourth-hide{
+          display: none; 
+          padding: 1rem 2rem 1rem 1rem; 
+        }
+        .fourth-hide.active3{
+            display: block;
+        }
+        .fifth-hide{
+            display: none;
+            padding: 1rem 2rem 1rem 1rem;
+        }
+        .fifth-hide.active4{
+            display: block;
+        }
+        
+        
+        #tripple-image img{
+            width: 120px;
+        
+        }
+        .tripple-flex{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        height: 56px;
+        width: 120px;
+        margin: auto;
+        
+        }
+        #tripple-image h1{
+        font-family: Reckless Neue;
+        font-size: 20px;
+        padding-top: 30px;
+        font-weight: 600;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: center;
+        
+        }
+        #tripple-image p{
+            padding-top: 20px;
+            font-family: Reckless Neue;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0em;
+        text-align: center;
+        
+        }
+         #tripple-btn {
+        margin:  auto;
+        display: flex;
+        justify-content: center;
+                
+         }
+        #tripple-btn .tripple-btn{
+            background-color: #0BB95a;
+            color: white;
+            padding: 1rem 2rem 1rem 3rem;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 1rem;
+            border: none;
+            cursor: pointer;
+        }
+
+
+
+
+        
+
+.svg-leave{
+    width: 36.26px;
 }
+.svg-logo{
+    width: 109.32px;
+}
+footer{
+    background: #0A2229;
+    width: 100%;
+    height: 100%;
+    margin-bottom: -50%;
+    
+
+}
+.all-footer{
+    display: block;
+    justify-content: left;
+}
+.logo-svg{ 
+    display: flex;
+    justify-content: inherit;
+    margin-top: -40px;
+    /* padding: 50px; */
+} 
+.ready{ 
+     display: block; 
+    justify-content: inherit; 
+    gap: 20px; 
+    padding-top: 50px; 
+    
+ }
+.ready h2{
+font-family: Reckless Neue;
+font-size: 20px;
+color: white;
+text-transform: capitalize ; 
+margin-top: -70px;
+font-weight: 600;
+line-height: 26px;
+text-align: left; 
+
+}
+ .footer-btn{
+    background: #0BB95D;
+     border: none;
+     cursor: pointer;
+     padding: 1rem 2rem 1rem 3rem;
+     color: white;
+      border-radius: 0.5rem;
+      margin-bottom: 10%;
+    
+     
+}  
+hr{
+    width: 90%;
+    margin: auto;
+    margin-top: -40px;
+    align-items: center;
+}
+.footer-icon{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: right;
+    gap: 20px;
+    color: white;
+}
+.term-condition{
+    display: flex;
+    justify-content: end;
+    align-self: flex-end;
+    gap: 40px;
+    padding-bottom: 50px;
+    color: white;
+    padding-right: 40px;
+    margin-top: 20px;
+    font-family: Reckless Neue;
+      font-size: 20px;
+       font-weight: 400;
+       line-height: 18px;
+
+}
+.p-privacy{
+    gap: 20px;
+}
+
+            
+        
+        
+        
+    }
+        
+
 
 
 
