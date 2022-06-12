@@ -590,7 +590,7 @@ hr{
         padding: 2rem ;
         display: flex;
         font-family: Reckless Neue;
-        font-size: 45px;
+        font-size: 35px;
         font-weight: 600;
         line-height: 70px;
         text-align: left; 
@@ -600,8 +600,8 @@ hr{
         color: #F5F5EB;
         padding: 20px;
         font-family: Reckless Neue;
-        font-size: 20px;
-        font-weight: 400;
+        font-size: 15px;
+        font-weight: 700;
         line-height: 38px;
         margin-top: -40px;
         letter-spacing: 0px;
@@ -678,7 +678,7 @@ hr{
             display: flex;
             justify-content: space-between;
             align-items: center;
-            gap: 20%;
+            gap: 40%;
             margin-bottom: -10%;
             background: #0A1E25;  
             overflow: scroll;
@@ -888,7 +888,7 @@ hr{
         li img{
             width: 15px;
             gap: 30px;
-            position: sticky;
+            display: none;
         }
         .hide{
             display: none;
@@ -1002,7 +1002,8 @@ footer{
 }
 .logo-svg{ 
     display: flex;
-    justify-content: inherit;
+    margin-left: -35px;
+    /* justify-content: left; */
     margin-top: -40px;
     /* padding: 50px; */
 } 
@@ -1043,15 +1044,15 @@ hr{
 }
 .footer-icon{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     flex-direction: row;
     align-items: right;
-    gap: 20px;
+    gap: 40px;
     color: white;
 }
 .term-condition{
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-self: flex-end;
     gap: 40px;
     padding-bottom: 50px;
