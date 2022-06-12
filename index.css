@@ -590,7 +590,7 @@ hr{
         padding: 2rem ;
         display: flex;
         font-family: Reckless Neue;
-        font-size: 35px;
+        font-size: 25px;
         font-weight: 600;
         line-height: 70px;
         text-align: left; 
@@ -600,7 +600,7 @@ hr{
         color: #F5F5EB;
         padding: 20px;
         font-family: Reckless Neue;
-        font-size: 15px;
+        font-size: 10px;
         font-weight: 700;
         line-height: 38px;
         margin-top: -40px;
@@ -679,9 +679,10 @@ hr{
             justify-content: space-between;
             align-items: center;
             gap: 40%;
+            padding: 20px;
             margin-bottom: -10%;
             background: #0A1E25;  
-            overflow: scroll;
+            overflow: auto;
         }
         #icons .google{
             width: 50px;
@@ -1055,6 +1056,7 @@ hr{
     justify-content: center;
     align-self: flex-end;
     gap: 40px;
+    padding: 10px;
     padding-bottom: 50px;
     color: white;
     padding-right: 40px;
