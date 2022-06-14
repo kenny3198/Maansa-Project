@@ -678,7 +678,7 @@ hr{
             height: 180px;
             display: flex;
             justify-content: space-between;
-            gap: 50%;
+            gap: 150%;
             padding: 20px;
             /* margin-bottom: -10%; */
             background: #0A1E25;  
