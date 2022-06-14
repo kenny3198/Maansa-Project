@@ -590,7 +590,7 @@ hr{
         color: #F5F5EB;
         display: flex;
         font-family: Reckless Neue;
-        font-size: 2rem;
+        font-size: 1.6rem;
         font-weight: 700;
         line-height: 55px;
         text-align: left; 
@@ -601,7 +601,7 @@ hr{
         color: #F5F5EB;
         padding: 20px;
         font-family: Reckless Neue;
-        font-size: 24px;
+        font-size: 1.6rem;
         font-weight: 700;
         line-height: 38px;
         margin-top: -40px;
@@ -678,9 +678,9 @@ hr{
             height: 180px;
             display: flex;
             justify-content: space-between;
-            gap: 40%;
+            gap: 100%;
             padding: 20px;
-            margin-bottom: -10%;
+            /* margin-bottom: -10%; */
             background: #0A1E25;  
             overflow: scroll;
         }
@@ -1052,13 +1052,14 @@ hr{
     align-items: flex-end;
     flex-direction: column;
     padding-right: 20px;
+    padding-bottom: 20px;
     gap: 40px;
     color: white;
     margin-bottom: 120%;
 }
 .term-condition{
     padding: 10px;
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
     color: white;
     margin-top: -125%;
     display: block;
