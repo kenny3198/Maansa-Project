@@ -678,7 +678,7 @@ hr{
             height: 180px;
             display: flex;
             justify-content: space-between;
-            gap: 150%;
+            gap: 30%;
             padding: 20px;
             /* margin-bottom: -10%; */
             background: #0A1E25;  
@@ -691,7 +691,7 @@ hr{
             width: 50px;
         }
         #icons .micro{
-            width: 100px;
+            width: 150px;
         }
         #icons .twitter{
             width: 50px;
